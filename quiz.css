@@ -1,0 +1,39 @@
+body{
+	background: url(bckg1.jpg);
+}
+
+body{
+	width: 940px;
+	margin: auto;
+	padding: auto;
+
+	background-repeat: repeat;
+}
+
+p{
+	font-family: verdana;
+	font-size: 16px;
+	color:#ffffcc;
+}
+
+h1{
+	font-family: verdana;
+	color:#ffffcc;
+}
+.crypto{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:950px;
+	height:150px;	
+}
+hr{
+	width:940px;
+}
+
+.quizlogo{
+	float: left;
+	margin: 5px;
+	width: 150px;
+	height: 75px;
+}

@@ -1,0 +1,93 @@
+body{
+	width: 940px;
+	margin: auto;
+	padding: auto;
+
+	background-repeat: repeat;
+}
+
+h1 {
+	font-family: verdana;
+	color: #ffffcc;
+	letter-spacing: -1px;
+	word-spacing: -5px;
+}	
+
+h2{
+	
+	text-align:left;
+	font-family: verdana;
+	color:#ffffcc;
+	
+}
+h5{
+	width:940px;
+	text-align:right;
+	color:#ffffcc;
+}
+
+a{
+	color:#ffffcc;
+}
+
+p,ul{
+	width:940px;
+	text-align:justify;
+	font-family: verdana;
+	font-size: 16px;
+	color:#ffffcc;
+}
+hr{
+	width:940px;
+}
+.titulos{
+	font-family: verdana;
+	font-size: 22px;
+	color:#ffffcc;
+}
+
+.crypto{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:950px;
+	height:150px;	
+}
+
+.nrodape{
+	font-family: verdana;
+	font-size: 16px;
+	color:#ffffcc;
+}
+
+.imag-index {
+	float: left;
+	margin: 10px ;
+	width: 400px;
+	height: 200px;
+}
+
+.indexframe{
+	width: 445px;
+	margin: 10px;
+
+}
+
+.imagem-esquerda{
+	float: right;
+	margin: 10px;
+	width: 500px;
+	height: 350px;
+}
+
+.imagem-direita {
+	float: left;
+	margin: 10px;
+}
+
+.quizlogo{
+	float: left;
+	margin: 10px;
+	width: 500px;
+	height: 200px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CryptoMag</title>
+		<link rel="stylesheet" href="mystyle.css">
+	</head>
+	
+<body background= "..\e-mag\bckg1.jpg">
+		<h1><img src="..\e-mag\Logo.gif" class="crypto"></h1>
+		<hr>
+		<h1>Como funciona a Blockchain</h1>
+		
+		<br>
+		
+		<img src="..\e-mag\pic12.jpeg" width="940" height="400">
+		<h2> 1º Passo: O registro de uma transação</h2>
+		<p><font>Por ser como um banco de dados, imagine o blockchain, de modo muito simplificado, como uma planilha Excel. Essa planilha Excel tem algumas colunas. Já que o blockchain do Bitcoin armazena transações financeiras, que colunas esse Excel deveria ter? Alguns comparam o blockchain com um livro-razão. Para simplificar ainda mais, imagine uma planilha com, no mínimo, a origem, o destino e o valor da transação.</font></p>
+		<img  class="imagem-direita" src="..\e-mag\pic3.png" width="400" height="200">
+		<p><font>Uma característica essencial do blockchain, entretanto, é que ele trabalha de maneira descentralizada e distribuída. Isso significa que qualquer pessoa poderia ter uma cópia da nossa planilha Excel em seu computador. Algo parecido com o compartilhamento de arquivos via Torrent. De fato, tenho uma cópia do blockchain do Bitcoin em meu computador e ela ocupa 80 GB neste momento. Diariamente, eu recebo dados atualizados dessa planilha.Outra característica essencial do blockchain é o sigilo e privacidade dos dados. Isso significa que ninguém pode saber quem são as pessoas envolvidas na transação. Logo, nossa planilha precisa melhorar. Não posso expor os dados das pessoas envolvidas na transação!<br>Como esconder essa informação? Se você pensou em criptografia, pensou certo.</p>
+		<h2>2º Passo: Tornar a transação anônima</h2>
+		<p>Para isso, o blockchain trouxe a ideia de endereço (address). A partir de uma chave privada, de sua posse, aplicando operações criptográficas, você pode gerar diversos endereços diferentes, que são um conjunto longo de caracteres e números. Recomenda-se que, a cada nova transação que você realizar, utilize um endereço diferente.Digamos que, no nosso exemplo, Marcos queira enviar dinheiro para Axl. Para fazer isso, Marcos precisa que Axl informe a ele um <u>endereço</u>.</p>
+		<img class="imagem-direita" src="..\e-mag\pic4.png" width="400" height="200">
+		<p>Veja então como ficou nosso blockchain (por enquanto):</p>
+		<p>A partir do endereço, ninguém tem como descobrir a identidade do Marcos e do Axl. Mas, com suas respectivas chaves privadas, eles podem assumir as propriedades desses endereços. <u>Tanto Marcos quanto Axl guardam suas chaves privadas em locais muito seguros</u> (por exemplo, em um papel embaixo da cama, em um cofre ou em um programa do tipo “carteira” no computador ou smartphone).</p><br><br><br>	
+		<h2> 3º Passo: Tornar a transação “oficial”</h2>
+		<p><font>Quando Marcos faz uma transação e envia Bitcoins a Axl, entretanto, essa transação não é automaticamente incluída no blockchain. Ela precisa ser validada. Por isso, ela fica em uma espécie de área temporária, esperando ser incluída no blockchain, quando então é oficializada. Veja na imagem abaixo nosso status “Pendente”.</font></p>
+		<img class="imagem-direita" src="..\e-mag\pic5.png" width="500" height="200">
+		<p><font>A cada 10 minutos, mais ou menos, todas as transações do mundo que estão na área temporária são analisadas por uma pessoa, chamada de <i>miner</i>. Na verdade, é um computador ligado à rede do blockchain que, após ganhar uma competição matemática, ganha o direito de incluir as transações pendentes no blockchain. Para isso, ele ganha um prêmio, em Bitcoins. Essa competição ocorre novamente daqui a 10 minutos.<br><br>Entre outras coisas, o <i>miner</i> vai verificar a autenticidade de cada transação. Como saber se alguém simplesmente gerou um volume de endereços falsos e está simulando transações para sua própria conta, esperando que alguma exista? Para isso existe a assinatura digital.<br><br>Quando Marcos fez a transação para Axl, ele assinou digitalmente as informações dessa transação com sua chave privada. Esse processo de assinatura é como uma operação criptográfica em cima de todas as informações da transação e, igualmente, gera uma chave representada por um novo conjunto de caracteres e números (a assinatura).<font></p>
+		<img src="..\e-mag\pic6.png">
+		<p><font>O <i>miner</i> vai confirmar que essa assinatura é válida, correspondente aos dados da transação, confirmando então a operação. Nesse momento, também, é oficializada a data da transação, através de um carimbo oficial de tempo. Por fim, o próprio miner assina a transação e gera novos procedimentos criptográficos, dando origem, para cada transação, ao “transaction id”, a chave que oficializa a transação.</font></p>
+		<img src="..\e-mag\pic7.png">
+		<h2> 4º Passo: Tornar a transação imutável</h2>
+		<p><font>Infelizmente, estamos ainda um pouco longes do fim. Temos um problema sério a resolver. Se todo mundo tem uma cópia dessa “planilha”,<u> o que impede de alguém apagar uma transação, atualizar os dados de uma transação ou mudar valores?</u> A transação é assinada digitalmente, mas seria relativamente fácil mudar os dados da transação E da assinatura digital ao mesmo tempo.<br><br>Aqui começa o grande segredo do blockchain e o próprio motivo pelo qual ele é chamado assim (corrente de blocos). Para isso, é preciso entender o conceito de <i>hash</i>.<br><br>O <i>hash</i> é uma operação ou função matemática que pode ser realizada sobre qualquer conjunto de informações digitais. Existem dezenas de funções de <i>hash</i> diferentes. Quando você seleciona um método de <i>hash</i>, sempre que aplicar sobre um determinado texto, ele irá gerar a mesma sequência simplificada de caracteres e números. Se você modificar qualquer coisa no texto, mesmo que uma vírgula, o <i>hash</i> irá mudar totalmente. Veja abaixo duas frases que passaram pela função de <i>hash</i> MD5, uma das mais simples:</font></p>
+		<img src="..\e-mag\pic8.jpg" width="773" height="122">
+		<p><font>Quando o <i>miner</i> realizou a validação de nossa transação, ele fez isso com todas as transações que estavam pendentes ao mesmo tempo. E, depois, gerou um hash calculado a partir de todas operações realizadas nesse bloco.</font></p>
+		<img src="..\e-mag\pic9.png" width="579" height="177">
+		<p><font>Quando esse bloco é inserido, finalmente, no blockchain, mais uma operação ocorre. Olhando para o hash final do bloco anterior (no nosso caso, 53), é realizada nova operação, gerando um novo <i>hash</i> final para esse novo bloco, elaborado a partir do hash do bloco anterior e do <i>hash</i> gerado a partir das transações desse bloco.</font></p>
+		<img src="..\e-mag\pic10.png" width="782" height="279">
+		<p><font>Observe que, uma vez que cada bloco adicionado no blockchain é armazenado e criptografado usando informações do bloco anterior, <u>absolutamente todos os registros do nosso banco de dados estão entrelaçados</u>. O bloco 54 depende do 53, que depende do 52. Essa lógica remete até o início do blockchain, que no caso do Bitcoin foi há 7 anos atrás.<br><br></font></p>
+		<p><font>Se eu quiser mudar os dados de uma transação qualquer, ou mesmo excluir uma transação do blockchain, mesmo que eu consiga fazer isso na cópia local que tenho em meu computador, jamais conseguiria oficializar isso frente as demais cópias do blockchain. Digamos que eu mude o valor de uma transação que foi realizada faz 3 anos. Ao mudar o valor da transação, o <i>hash</i> da transação é modificado. Com isso, o <i>hash</i> do bloco é modificado. Com isso, o <i>hash</i> do próximo bloco é modificado. E com isso, todos os demais blocos e transações ocorridas até o dia de hoje seriam modificados. A operação não seria aceita e o volume de processamento computacional necessário para que eu conseguisse modificar isso e recalcular os <i>hashs</i> em todas as cópias existentes do blockchain seria impensável.<br><br></font></p>
+		<p><font>Você deve ter observado, entretanto, que quanto mais recente a transação, menor sua força e, teoricamente, mais fácil seria de adulterá-la. De fato, modificar os dados do último bloco, ocorrido 10 minutos atrás, seria teoricamente mais simples. É por isso que alguns indicam esperar alguns blocos a mais serem processados até considerar sua transação “segura”</font></p>
+		<p><br>
+		<hr>
+		<p><b><u>Rafael Bortolini</u></b> diretor de P&D e Inovação da SML Brasil, mestre em Engenharia de Produção pela UFRGS e consultor com mais de 15 anos de experiência em projetos de melhoria de processos de negócio (BPM) em organizações de grande porte no Brasil nos setores de varejo, educação, financeiro e área pública. Arquiteto e responsável pelo desenvolvimento do Orquestra BPMS, primeiro BPMS brasileiro. Sou responsável por 4 projetos de BPM vencedores do WfMC Awards in BPM & Workflow, América Latina, e também professor em cursos de pós-graduação, em cursos de certificação e palestrante em diversos eventos no Brasil, com foco em gestão de processos. Revisei e colaborei no ABPMP CBOK V3 edições brasileira e inglesa, a participei ativamente de diversos eventos da ABPMP Brasil. Possuo certificações CBPP, OCEB e MCSD.</p>
+		<p></p>
+		<p><a href="http://blog.smlbrasil.com.br/2017/05/12/como-funciona-o-blockchain-em-quatro-passos/">Fonte: SML blog</a>
+		
+</body>
+	
+</html>

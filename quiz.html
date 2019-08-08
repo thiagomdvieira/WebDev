@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+	<script language="javascript">
+		
+
+	function resposta(form) {
+	for (var i=0;i<form.length;i++){
+	 if(form[i].checked){
+	 break
+		}
+	}
+	var answer=""
+	if (i<form.length){
+	answer = form[i].value
+	}
+	return answer;
+	}
+
+	function solution(form){
+		var points=0; var comment=""
+
+		if (resposta(form.question1)=="E")	{points=points+1}
+		if (resposta(form.question2)=="A")	{points=points+1}
+		if (resposta(form.question3)=="D")	{points=points+1}
+		if (resposta(form.question4)=="B")	{points=points+1}
+		if (resposta(form.question5)=="C")	{points=points+1}
+		if (resposta(form.question6)=="E")	{points=points+1}
+		if (resposta(form.question7)=="C")	{points=points+1}
+		if (resposta(form.question8)=="A")	{points=points+1}
+		if (resposta(form.question9)=="B")	{points=points+1}
+		if (resposta(form.question10)=="D")	{points=points+1}
+
+		if (points==0) {comment="... xiiii..."}
+ 		if (points==1) {comment="... eitha..."}
+		if (points==4) {comment="... tá melhorando!"}
+ 		if (points==7) {comment="... quase lá!"}
+ 		if (points==9) {comment="... muito bom!"}
+ 		if (points==10) {comment="... perfeito!"}
+
+ 		mensagem= '<CENTER>' + 'Você fez '+ points + ' ponto(s) '+ comment + '</CENTER>'
+
+ 		solu=open();
+ 		solu.document.write(mensagem)
+	}
+	</script>
+
+	<title>Teste seus conhecimentos sobre o blockchain</title>
+</head>
+<body background= "..\e-mag\bckg1.jpg">
+
+	<form name="TESTE">
+
+		<h1><img src="..\e-mag\Logo.gif" class="crypto"></h1>
+		<img class="quizlogo" src="..\e-mag\quizlogo.png">
+		<hr>
+		<p>Teste seus conhecimentos sobre o Blochain!<br><br>
+			1-O que é blockchain?<br><br>
+		<input type="radio" name="question1" value="A">Livro razão<br>
+		<input type="radio" name="question1" value="B">Livro caixa<br>
+		<input type="radio" name="question1" value="C">Livro financeiro<br>
+		<input type="radio" name="question1" value="D">Livro registro<br>
+		<input type="radio" name="question1" value="E">Livro contábil<br>
+		<br><br>
+
+		2-Qual ano surgiu blockchain?<br><br>
+		<input type="radio" name="question2" value="A">2008<br>
+		<input type="radio" name="question2" value="B">2009<br>
+		<input type="radio" name="question2" value="C">2011<br>
+		<input type="radio" name="question2" value="D">2012<br>
+		<input type="radio" name="question2" value="E">2005<br>
+		<br><br>
+
+		3-Em qual criptomoeda o blockchain começou?<br><br>
+		<input type="radio" name="question3" value="A">Litecoin<br>
+		<input type="radio" name="question3" value="B">Ethereum<br>
+		<input type="radio" name="question3" value="C">Ripple<br>
+		<input type="radio" name="question3" value="D">Bitcoin<br>
+		<input type="radio" name="question3" value="E">Monero<br>
+		<br><br>
+
+		4-Cada bloco é ligado ao anterior por um elo chamado?<br><br>
+		<input type="radio" name="question4" value="A">Corrente de blocos<br>
+		<input type="radio" name="question4" value="B">Hash<br>
+		<input type="radio" name="question4" value="C">Minerador<br>
+		<input type="radio" name="question4" value="B">Hashes<br>
+		<input type="radio" name="question4" value="C">Cadeia<br>
+		<br><br>
+
+		5-Quem desenvolveu os primeiros estudos de matemática para serem utilizados em contabilidade?<br><br>
+		<input type="radio" name="question5" value="A">Benedetto Cotrugli<br>
+		<input type="radio" name="question5" value="B">Jacopo de' Barbari<br>
+		<input type="radio" name="question5" value="C">Frei franciscano Luca Pacioli<br>
+		<input type="radio" name="question5" value="D">Antônio Fernando Saburido<br>
+		<input type="radio" name="question5" value="E">Piero della Francesca<br>
+		<br><br>
+
+		6-A palavra central que explica o blockchain é o termo "____", que em inglês significa livro-razão em contabilidade.<br><br>
+		<input type="radio" name="question6" value="A">Smart Contracts<br>
+		<input type="radio" name="question6" value="B">Hash<br>
+		<input type="radio" name="question6" value="C">Bitcoin<br>
+		<input type="radio" name="question6" value="D">hedge<br>
+		<input type="radio" name="question6" value="E">Ledger<br>
+		<br><br>
+
+		7-Quais as instituiçoes financeira tem simpatia pelo blockchain?<br><br>
+		<input type="radio" name="question7" value="A">banca safra,bank boston<br>
+		<input type="radio" name="question7" value="B">itau,caixa economica,bradesco<br>
+		<input type="radio" name="question7" value="C">BNP Paribas, HSBC, Santander, Bank of America, ABN Amro, Goldman 
+		Sachs, Credit Suisse e Morgan Stanley<br>
+		<input type="radio" name="question7" value="D">HBOS,Barclays Bank,Lloyds TSB<br>
+		<input type="radio" name="question7" value="E">Royal Bank of Scotland Group,Standard Chartered Bank<br>
+		<br><br>
+
+		8-Além das criptmoedas que utlizam o blockchain, qual é o outro tipo de transações tambem utliza-o?<br><br>
+		<input type="radio" name="question8" value="A">Smart contracts<br>
+		<input type="radio" name="question8" value="B">Smart buy<br>
+		<input type="radio" name="question8" value="C">smart pay<br>
+		<input type="radio" name="question8" value="D">smart things<br>
+		<input type="radio" name="question8" value="E">smart money<br>
+		<br><br> 
+
+		9-Qual livro foi escrito em 1494, pelo frei franciscano Luca Pacioli (1445-1517) desenvolveu os primeiros estudos de matemática para serem utilizados em contabilidade?<br><br>
+		<input type="radio" name="question9" value="A">Ars Magna<br>
+		<input type="radio" name="question9" value="B">Summa de Arithmetica, Geometria, Proportioni et Proportionalita<br>
+		<input type="radio" name="question9" value="C">De divina proportione<br>
+		<input type="radio" name="question9" value="D">De viribus quantitatis<br>
+		<input type="radio" name="question9" value="E">Mathematical Treasure<br>
+		<br><br> 
+
+		10-Qual pais ira publicar todos os documentos do governo na blockchain até 2020?<br><br>
+		<input type="radio" name="question10" value="A">Estados Unidos<br>
+		<input type="radio" name="question10" value="B">Suiça<br>
+		<input type="radio" name="question10" value="C">Islândia<br>
+		<input type="radio" name="question10" value="D">Dubai<br>
+		<input type="radio" name="question10" value="E">Japão<br>
+		<br><br>
+
+		<input type="BUTTON" name="valide" value="Resultado" 
+		onclick="javascript:solution(this.form);"><br>
+		<br>
+		</p>
+	
+
+</body>
+</html>
